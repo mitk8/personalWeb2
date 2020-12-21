@@ -141,7 +141,7 @@ nav .navbar-nav li a:hover{
 }
 
 .heroBlock {
-    width: 100%;
+    /* width: 100%; */
     height: auto;
     padding: 0 0;
     max-width: 400px;
@@ -488,7 +488,7 @@ footer p {
     box-shadow: 0px 4px 50px 5px rgba(148, 148, 148, 0.28);
     backdrop-filter: blur(200px);
     border-radius: 30px;
-
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -602,12 +602,96 @@ footer h3 {
 
     .backgroundGradientHero {
         background: linear-gradient(90deg, rgba(66, 66, 66, 0.1) 5.67%, rgba(123, 123, 123, 0.3) 98.28%), linear-gradient(90deg, #EEC070 3.05%, rgba(237, 59, 83, 0.8) 40.43%, #AD62E0 75.71%, #a5b4dd 90.66%);
-        clip-path: polygon(0 0, 100% 0, 100% 55%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
     }
 
+
+    
+    .heroBlock {
+        max-width: 600px;
+    }
+    
+    .heroMaterial {
+        padding: 50px 30px;
+        
+    }
+    
+    .heroMaterial .heroHeading {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    
+    .heroMaterial .heroTagline {
+        padding-top: 10px;
+    
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        display: flex;
+        align-items: center;
+    
+        color: #565656;
+    }
+    
+    .heroMaterial .heroExplore {
+        padding: 10px 35px;
+        margin-top: 10px;
+        display: inline-block;
+        font-weight: 600;
+        color: white;
+        text-decoration: none;
+        background: #000000;
+        border-radius: 30px;
+        transition: 0.3s ease;
+    }
     
 
     /* SPHERES */
+    .sphere {
+        border-radius: 50%;
+        box-shadow: 0px 4px 10px rgba(129, 129, 129, 0.25);
+        backdrop-filter: blur(30px);
+    }
+
+    .sPurple {
+        position: absolute;
+        top: 150px;
+        left: 50px;
+        background: #AD62E0; 
+        width: 100px;
+        height: 100px;
+    }
+
+    .sYellow {
+        position: absolute;
+        top: 185px;
+        right: 72px;
+        background:  #EEC070; 
+        width: 100px;
+        height: 100px;
+    }
+
+    .sRed {
+        position: absolute;
+        background:  rgba(237, 59, 83, 0.8); 
+        width: 132px;
+        height: 132px;
+        left: 80px;
+        bottom: 150px;
+        z-index: -1;
+    }
+
+    .sLazure {
+        position: absolute;
+        right: 60px;
+        bottom: 300px;
+        background:  #A5DBDD; 
+        width: 83px;
+        height: 83px;
+    }
+
 
 
     /* SKILLS */
@@ -674,14 +758,158 @@ footer h3 {
     }
 
     /*Footer*/
+    footer p {
+        position: absolute;
+        bottom: 55px;
+        font-weight: 600;
+        color: white;
+    }
+    
+    .bg-over {
+        max-width: 800px;
+        height: 318px;
+        padding-top: 0;
+        
+        display: grid;
+        grid-template-columns: 1fr 0.1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        grid-template-areas: "h2Text line contactInfo";
+
+    }
+    
+    .line {
+        grid-area: line;
+        height: 203px;
+        width: 1px;
+        background-color: #DEDEDE;
+        margin: 20px auto;
+    }
+    
+    .bg-over h2 {
+        grid-area: h2Text;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer h3 {
+        font-size: 1.6rem;
+        
+    }
+
+    .contactInfo {
+        grid-area: contactInfo;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .socialIcon {
+        margin: 0 5px;
+        border-radius: 10px;
+    }
 }
 
 @media (min-width: 991px) {
 
+    
+
     /* SPHERES */
+    .sphere {
+        border-radius: 50%;
+        box-shadow: 0px 4px 10px rgba(129, 129, 129, 0.25);
+        backdrop-filter: blur(30px);
+    }
+
+    .sPurple {
+        position: absolute;
+        top: 180px;
+        left: 150px;
+        background: #AD62E0; 
+        width: 100px;
+        height: 100px;
+    }
+
+    .sYellow {
+        position: absolute;
+        top: -50px;
+        right: -50px;
+        background:  #EEC070; 
+        width: 200px;
+        height: 200px;
+    }
+
+    .sRed {
+        position: absolute;
+        background:  rgba(237, 59, 83, 0.8); 
+        width: 180px;
+        height: 180px;
+        left: 220px;
+        bottom: 190px;
+        z-index: -1;
+    }
+
+    .sLazure {
+        position: absolute;
+        right: 60px;
+        bottom: 300px;
+        background:  #A5DBDD; 
+        width: 190px;
+        height: 190px;
+    }
 
 
     /*HERO SECTION*/
+    .heroBlock {
+        max-width: 800px;
+    }
+    
+    .heroMaterial {
+        padding: 70px 50px;
+        
+    }
+    
+    .heroMaterial .heroHeading {
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+    
+    .heroMaterial .heroTagline {
+        padding-top: 10px;
+    
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        display: flex;
+        align-items: center;
+    
+        color: #565656;
+    }
+    
+    .heroMaterial .heroExplore {
+        padding: 10px 35px;
+        margin-top: 10px;
+        display: inline-block;
+        font-weight: 600;
+        color: white;
+        text-decoration: none;
+        background: #000000;
+        border-radius: 30px;
+        transition: 0.3s ease;
+    }
+    
+
+    .backgroundGradientHero {
+        background: linear-gradient(90deg, rgba(66, 66, 66, 0.1) 5.67%, rgba(123, 123, 123, 0.3) 98.28%), linear-gradient(90deg, #EEC070 3.05%, rgba(237, 59, 83, 0.8) 40.43%, #AD62E0 75.71%, #a5b4dd 90.66%);
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+    }
+
     nav .navbar-nav li a{
         text-align: center;
         padding-top: 5px;
@@ -794,4 +1022,6 @@ footer h3 {
     footer {
         margin-top: 45vh;
     }
+    
+    
 }
