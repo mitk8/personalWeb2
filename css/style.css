@@ -24,49 +24,7 @@ h3 {
 .secondColor {
     color: 565656;
 }
-/* SPHERES */
-.sphere {
-    border-radius: 50%;
-    box-shadow: 0px 4px 10px rgba(129, 129, 129, 0.25);
-    backdrop-filter: blur(30px);
-}
 
-.sPurple {
-    position: absolute;
-    top: 100px;
-    left: -50px;
-    background: #AD62E0; 
-    width: 100px;
-    height: 100px;
-}
-
-.sYellow {
-    position: absolute;
-    top: 185px;
-    right: -62px;
-    background:  #EEC070; 
-    width: 84px;
-    height: 84px;
-}
-
-.sRed {
-    position: absolute;
-    background:  rgba(237, 59, 83, 0.8); 
-    width: 132px;
-    height: 132px;
-    left: -60px;
-    bottom: 80px;
-    z-index: -1;
-}
-
-.sLazure {
-    position: absolute;
-    right: 0px;
-    bottom: 200px;
-    background:  #A5DBDD; 
-    width: 83px;
-    height: 83px;
-}
 
 /* HERO */
 
@@ -516,49 +474,7 @@ footer h3 {
 }
 
 @media (min-width: 600px) {
-    /* SPHERES */
-    .sphere {
-        border-radius: 50%;
-        box-shadow: 0px 4px 10px rgba(129, 129, 129, 0.25);
-        backdrop-filter: blur(30px);
-    }
     
-    .sPurple {
-        position: absolute;
-        top: 200px;
-        left: 10px;
-        background: #AD62E0; 
-        width: 100px;
-        height: 100px;
-    }
-    
-    .sYellow {
-        position: absolute;
-        top: 100px;
-        right: 50px;
-        background:  #EEC070; 
-        width: 100px;
-        height: 100px;
-    }
-    
-    .sRed {
-        position: absolute;
-        background:  rgba(237, 59, 83, 0.8); 
-        width: 150px;
-        height: 150px;
-        left: 30px;
-        bottom: 110px;
-        z-index: -1;
-    }
-    
-    .sLazure {
-        position: absolute;
-        right: 10px;
-        bottom: 200px;
-        background:  #A5DBDD; 
-        width: 83px;
-        height: 83px;
-    }
     /* HERO */
     /*ABOUT ME*/
     /* EDUCATION */
@@ -648,52 +564,7 @@ footer h3 {
     }
     
 
-    /* SPHERES */
-    .sphere {
-        border-radius: 50%;
-        box-shadow: 0px 4px 10px rgba(129, 129, 129, 0.25);
-        backdrop-filter: blur(30px);
-    }
-
-    .sPurple {
-        position: absolute;
-        top: 150px;
-        left: 50px;
-        background: #AD62E0; 
-        width: 100px;
-        height: 100px;
-    }
-
-    .sYellow {
-        position: absolute;
-        top: 185px;
-        right: 72px;
-        background:  #EEC070; 
-        width: 100px;
-        height: 100px;
-    }
-
-    .sRed {
-        position: absolute;
-        background:  rgba(237, 59, 83, 0.8); 
-        width: 132px;
-        height: 132px;
-        left: 80px;
-        bottom: 150px;
-        z-index: -1;
-    }
-
-    .sLazure {
-        position: absolute;
-        right: 60px;
-        bottom: 300px;
-        background:  #A5DBDD; 
-        width: 83px;
-        height: 83px;
-    }
-
-
-
+    
     /* SKILLS */
     .segmentCard {
         max-width: 730px;
@@ -815,57 +686,23 @@ footer h3 {
 }
 
 @media (min-width: 991px) {
+ 
+    .heroSection {
+        margin-top: 12vh !important;
+        margin-bottom: -10vh !important;
+        perspective: 1000px;
+        padding: 150px 0;
+        margin-top: 0;
+        
+    }
 
     
-
-    /* SPHERES */
-    .sphere {
-        border-radius: 50%;
-        box-shadow: 0px 4px 10px rgba(129, 129, 129, 0.25);
-        backdrop-filter: blur(30px);
-    }
-
-    .sPurple {
-        position: absolute;
-        top: 180px;
-        left: 150px;
-        background: #AD62E0; 
-        width: 100px;
-        height: 100px;
-    }
-
-    .sYellow {
-        position: absolute;
-        top: -50px;
-        right: -50px;
-        background:  #EEC070; 
-        width: 200px;
-        height: 200px;
-    }
-
-    .sRed {
-        position: absolute;
-        background:  rgba(237, 59, 83, 0.8); 
-        width: 180px;
-        height: 180px;
-        left: 220px;
-        bottom: 190px;
-        z-index: -1;
-    }
-
-    .sLazure {
-        position: absolute;
-        right: 60px;
-        bottom: 300px;
-        background:  #A5DBDD; 
-        width: 190px;
-        height: 190px;
-    }
-
-
     /*HERO SECTION*/
     .heroBlock {
         max-width: 800px;
+        transform-style: preserve-3d;
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(0);
     }
     
     .heroMaterial {
@@ -876,6 +713,8 @@ footer h3 {
     .heroMaterial .heroHeading {
         font-size: 3.5rem;
         line-height: 4rem;
+        z-index: 1;
+        transition: all 0.75s ease-out;
     }
     
     .heroMaterial .heroTagline {
@@ -888,7 +727,8 @@ footer h3 {
         line-height: 2rem;
         display: flex;
         align-items: center;
-    
+        z-index: 1;
+        transition: all 0.75s ease-out;
         color: #565656;
     }
     
@@ -902,6 +742,7 @@ footer h3 {
         background: #000000;
         border-radius: 30px;
         transition: 0.3s ease;
+        cursor: pointer;
     }
     
 
@@ -945,14 +786,7 @@ footer h3 {
         justify-content: space-around;
     }
 
-    .heroSection {
-        height: auto;
-        margin-top: 25vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+   
     /*EDUCATION*/
     .educationSection {
         margin-top: 20vh ;
